@@ -6,7 +6,7 @@ export default function NewsSection() {
     <section className="border-y border-white/10 py-16 md:py-24">
       <div className="container-base">
         <div className="mb-10 flex items-end justify-between">
-          <h2 className="text-2xl font-semibold md:text-3xl">News</h2>
+          <h2 className="text-2xl font-semibold md:text-4xl">News</h2>
           <Link href="/news" className="text-sm text-accent transition hover:opacity-75">
             View all
           </Link>
@@ -16,10 +16,11 @@ export default function NewsSection() {
             <Link
               key={item.slug}
               href={`/news/${item.slug}`}
-              className="block rounded-xl border border-white/10 px-5 py-4 transition hover:border-accent/70 hover:bg-white/[0.02] md:px-7"
+              className="block rounded-xl border border-white/10 px-5 py-5 transition hover:border-accent/70 hover:bg-white/[0.02] md:px-7"
             >
-              <p className="mb-1 text-xs text-paper/60">{item.date} / {item.category}</p>
-              <h3 className="text-base font-medium md:text-lg">{item.title}</h3>
+              <p className="mb-2 text-xs text-paper/60">{item.date} / {item.category}</p>
+              <h3 className="mb-2 text-base font-medium md:text-xl">{item.title}</h3>
+              <p className="text-sm text-paper/75">{item.summary}</p>
             </Link>
           ))}
         </div>

@@ -6,8 +6,13 @@
   color-scheme: dark;
 }
 
+* {
+  border-color: rgb(255 255 255 / 0.1);
+}
+
 body {
   @apply bg-base text-paper antialiased;
+  background-image: radial-gradient(circle at 80% 20%, rgba(212, 255, 56, 0.08), transparent 35%);
 }
 
 .container-base {

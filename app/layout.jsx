@@ -3,8 +3,8 @@ import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 
 export const metadata = {
-  title: 'Company | Corporate Site',
-  description: 'Next.js corporate website sample',
+  title: 'NEXUS | Corporate Site',
+  description: 'NEXUS corporate website built with Next.js',
 };
 
 export default function RootLayout({ children }) {

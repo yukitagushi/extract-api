@@ -2,14 +2,15 @@ import Link from 'next/link';
 import { newsItems } from '@/data/news';
 
 export const metadata = {
-  title: 'News | Company',
+  title: 'News | NEXUS',
 };
 
 export default function NewsPage() {
   return (
     <section className="py-16 md:py-24">
       <div className="container-base">
-        <h1 className="mb-10 text-3xl font-semibold">News</h1>
+        <p className="mb-3 text-xs tracking-[0.2em] text-accent">NEWS</p>
+        <h1 className="mb-10 text-3xl font-semibold md:text-4xl">最新情報</h1>
         <div className="space-y-4">
           {newsItems.map((item) => (
             <Link
