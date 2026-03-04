@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+* {
+  border-color: rgb(255 255 255 / 0.1);
+}
+
+body {
+  @apply bg-base text-paper antialiased;
+  background-image: radial-gradient(circle at 80% 20%, rgba(212, 255, 56, 0.08), transparent 35%);
+}
+
+.container-base {
+  @apply mx-auto w-full max-w-6xl px-5 md:px-8;
+}
+
+.grid-overlay {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.04) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
